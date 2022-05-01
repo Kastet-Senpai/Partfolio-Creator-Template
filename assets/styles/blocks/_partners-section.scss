@@ -1,0 +1,21 @@
+.partners-section {
+    padding: 58px 0;
+
+    .partners {
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+            margin: 35px 0;
+        }
+    }
+}

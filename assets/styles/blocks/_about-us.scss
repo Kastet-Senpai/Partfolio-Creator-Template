@@ -1,0 +1,113 @@
+.aboutUs-section {
+    position: relative;
+
+    &__upper-title {
+        margin-top: 100px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        color: #FF5E69;
+    }
+    &__title {
+        margin-top: 20px;
+        padding: 0 170px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 54px;
+        line-height: 59px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #000;
+    }
+
+    &__about-list {
+        margin-top: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__about-item {
+        position: relative;
+        margin-right: 72px;
+        width: 265px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -40px;
+            display: block;
+            height: 1px;
+            width: 28px;
+            background-color: #DAE4FE;
+        }
+
+        &:last-child {
+            margin-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &__about-item-title {
+        margin-top: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+    &__about-item-descr {
+        margin: 25px 0;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #666666;
+    }
+    &__about-item-list {
+        margin-left: 15px;
+        list-style-type: square;
+
+        &--item {
+            line-height: 28px;
+
+            &--text {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    &__actions {
+        margin-top: 90px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__or-divider {
+        text-transform: uppercase;
+        @include fontSize(11);
+        font-family: 'Open-sans', sans-serif;
+        font-weight: 600;
+        margin: 0 10px;
+    }
+}

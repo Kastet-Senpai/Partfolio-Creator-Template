@@ -1,0 +1,41 @@
+.header {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+    }
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+
+    .logo-link {
+        margin-right: 70px;
+    }
+
+    .nav {
+        &__list {
+            display: flex;
+        }
+
+        &__item {
+            margin-right: 42px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__link {
+            font-family: $fontRoboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            transition: color .3s ease-in-out;
+
+            &--active, &:hover, &:active {
+                color: #FF8A56;
+            }
+        }
+    }
+}

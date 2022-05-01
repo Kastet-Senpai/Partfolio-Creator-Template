@@ -1,0 +1,98 @@
+:root {
+    --body-color: #fff;
+    --basic-font: 16px, sans-serif;
+    --accent-color: rgb(102, 131, 51);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font: var(--basic-font);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0;
+    padding: 0;
+    background: var(--body-color);
+}
+
+.maincontent {
+    flex: 1 0;
+}
+
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 1000px;
+}
+
+/**
+*
+* Global settings
+*
+*/
+
+.header-container {
+    @include container(var(--header-container));
+}
+
+.container-1215 {
+    @include container(var(--header-container));
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container--900 {
+    @include container(900px);
+    padding: 0;
+}
+.container--1170 {
+    @include container(1170px);
+    margin: 100px auto;
+    padding: 0;
+}
+
+.section-upper-title {
+    text-transform: uppercase;
+    font-family: $fontRoboto;
+    font-weight: normal;
+    color: $accentTextColor;
+    @include fontSize(10);
+}
+.section-title {
+    font-family: $fontRoboto;
+    font-weight: 700;
+    color: $accentTextColor;
+    @include fontSize(40);
+
+    &-accent-text {
+        font-weight: 700;
+    }
+}
+.section-descr {
+    font-family: $fontRoboto;
+    font-weight: 400;
+    color: #8D96BD;
+}

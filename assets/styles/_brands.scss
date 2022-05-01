@@ -1,0 +1,36 @@
+.btn {
+    width: 151px;
+    height: 58px;
+    border-radius: 2px;
+    margin-right: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    transition: backround .3s ease-in-out, 
+                background-color .3s ease-in-out,
+                color .3s ease-in-out;
+    &:hover, &:active {
+        cursor: pointer;
+    }
+}
+
+.btn-primary {
+    background: $bgPrimary;
+    color: $colorPrimary;
+    font-weight: 700;
+    border: none;
+    &:hover, &:active {
+        background-color: rgba($bgPrimary, .7);
+    }
+}
+
+.btn-secondary {
+    border: none;
+    background: transparent;
+    color: $colorSecondary;
+    &:hover, &:active {
+        text-decoration: underline;
+    }
+}
